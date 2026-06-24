@@ -1,6 +1,6 @@
-# hey, i'm Joel 👋
+# Hey, i'm Joel 👋
 
-recent CSE grad from Bengaluru who likes building things that are slightly too ambitious.
+Recent CSE grad from Bengaluru who likes building things that are slightly too ambitious.
 
 i work around **healthcare apps, backend systems, mobile apps, and AI workflows** — mostly the kind where documents, doctors, reports, speech, and data all somehow need to behave nicely together.
 
