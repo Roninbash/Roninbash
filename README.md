@@ -1,16 +1,34 @@
-## Hi there 👋
+# Hi, I'm Joel Raj 👋
 
-<!--
-**Roninbash/Roninbash** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Backend & Mobile Developer
 
-Here are some ideas to get you started:
+## About Me
+- B.Tech CSE @ Christ University
+- AI/Software Developer @ Adhish Technologies
+- Interested in Backend Development, Mobile Apps, AI and Automation
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Tech Stack
+- Node.js
+- TypeScript
+- PostgreSQL
+- React Native
+- Swift
+- AWS
+- Docker
+
+## Featured Projects
+### 🩺 Dr.Notes
+iOS clinical documentation app with on-device AI
+
+### 💬 MedXChat
+Medical chat platform with document processing
+
+### 🏥 Mater Dei
+Clinical guideline portal for doctors
+
+### 🛡️ Dynamic Reinforcement Learning Firewall
+Final year AI security project
+
+## Connect
+- LinkedIn: (your LinkedIn URL)
+- Email: (your email)
