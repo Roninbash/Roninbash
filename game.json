@@ -2,11 +2,11 @@
   "board": [
     "O",
     "X",
+    "X",
     null,
     null,
     null,
-    null,
-    null,
+    "O",
     null,
     null
   ],
@@ -17,8 +17,8 @@
   },
   "last": {
     "player": "Roninbash",
-    "move": "B1",
-    "at": "2026-10-20T18:30:49.778Z"
+    "move": "C1",
+    "at": "2026-10-20T18:31:13.547Z"
   },
   "winningLine": null,
   "status": "playing"
