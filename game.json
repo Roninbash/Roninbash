@@ -1,7 +1,7 @@
 {
   "board": [
-    null,
-    null,
+    "O",
+    "X",
     null,
     null,
     null,
@@ -15,7 +15,11 @@
     "bot": 0,
     "draws": 0
   },
-  "last": null,
+  "last": {
+    "player": "Roninbash",
+    "move": "B1",
+    "at": "2026-10-20T18:30:49.778Z"
+  },
   "winningLine": null,
   "status": "playing"
 }
