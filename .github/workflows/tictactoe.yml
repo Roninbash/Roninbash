@@ -1,0 +1,35 @@
+name: Tic-tac-toe
+on:
+  issues:
+    types: [opened]
+  push:
+    branches: [main]
+    paths: [scripts/tictactoe.js, game.json]
+permissions:
+  contents: write
+  issues: write
+concurrency: tictactoe
+jobs:
+  play:
+    if: github.event_name == 'push' || startsWith(github.event.issue.title, 'move:')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - id: game
+        run: node scripts/tictactoe.js
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+      - run: |
+          git config user.name "tic-tac-toe bot"
+          git config user.email "actions@github.com"
+          git add README.md game.json
+          git diff --cached --quiet || git commit -m "Game: ${{ github.event.issue.title || 'render board' }}"
+          git push
+      - if: github.event_name == 'issues'
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" --body "${{ steps.game.outputs.reply }}"
+          gh issue close "${{ github.event.issue.number }}" --reason completed
